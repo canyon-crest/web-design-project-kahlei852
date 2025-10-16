@@ -27,7 +27,7 @@ h3{
 }
 p{
     line-height: 2.5em;
-    background-color: aquamarine;
+    background-color: rgb(7, 144, 98);
     padding: 20px;
     border: 2px dotted black;
 }
@@ -55,4 +55,23 @@ a:active{
     color:rgb(148, 233, 205);
 }
 /*ID RULES*/
+#pic1{
+    border:none;
+    width: 250px;
+}
+#pic2{
+    float: right;
+    margin-left: 10px;
+    margin-right: 0px;
+}
+#p2{
 
+}
+/* CLASS RULE */ 
+.highlight{
+    background-color:rgb(225, 51, 38);
+    color:black;
+    padding: 2px;
+    border-radius: 3px;
+    font-weight: bold;
+}
