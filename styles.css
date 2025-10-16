@@ -1,11 +1,58 @@
 body{
     background-color: darkseagreen;
     color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif
+}
+h1{
+    background-color: azure;
+    border: 3px gray;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    margin: 20px auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+h2{
+    font-size: 1.3em;
+    text-align: center;
+    font-style: italic;
+}
+h3{
+    padding: 5px;
+    border-left: 20px groove #ccc;
+    padding-left: 15px;
+    border-radius: 30px;
+    border-bottom: 2px solid #ccc;
+    width: 250px;
 }
 p{
     line-height: 2.5em;
+    background-color: aquamarine;
+    padding: 20px;
+    border: 2px dotted black;
 }
 img{
     width: 300px;
+    border: 3px solid white;
+    border-radius: 15px;
     float: left;
+    margin-right: 20px;
 }
+/*PSEUDO SELECTORS*/ 
+a:link{
+    color:rgb(5, 105, 55);
+    text-decoration: none;
+    font-weight: bold;
+}
+a:visited{
+    color: rgb(45, 200, 100);
+}
+a:hover{
+    color: antiquewhite;
+    text-decoration: underline;
+}
+a:active{
+    color:rgb(148, 233, 205);
+}
+/*ID RULES*/
+
