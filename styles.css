@@ -3,6 +3,14 @@ body{
     color: rgb(0, 0, 0);
     font-family: Arial, Helvetica, sans-serif
 }
+#container{
+    width: 800px;
+    margin: 20px auto; 
+    background-color: rgb(209, 192, 192);
+    padding: 40px;
+    border-left:5px double white;
+    border-right:5px double white;
+}
 h1{
     background-color: azure;
     border: 3px gray;
