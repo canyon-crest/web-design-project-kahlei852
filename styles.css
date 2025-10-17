@@ -83,3 +83,63 @@ a:active{
     border-radius: 3px;
     font-weight: bold;
 }
+#sidebar{
+    background-color: black;
+    width: 200px;
+    line-height: 2.5em;
+    border:2px solid white;
+    flaot: right;
+    margin: 20px;
+    margin-top: 70px;
+}
+#sidebar h3{
+    border: none;
+    text-align: center;
+    padding: 5px;
+    margin: 0 auto;
+    margin-top: 15px;
+    background-color:darkgreen;
+    border: 1px dotted white;
+}
+li{
+    font-style: italic;
+}
+
+@media (max-width: 1200px) {
+    #container{
+        background-color: rgb(4, 145, 4);
+        width:600px;
+    }
+}
+
+@media(max max-width:992px){
+    #container{
+        background-color: rgb(49, 184, 49);
+        width: 100%;
+    }
+    body, p, #container, #p2, h3{
+        margin:0;
+        border:none;
+        padding: 0;
+        background-color: antiquewhite;
+    }
+    p{
+        padding:20px;
+    }
+}
+@media(max-width:768px){
+    #sidebar{
+        display:none;
+    }
+    h1{
+        border:none;
+        background:none;
+        color:#ccc
+        width:90%;
+    }
+
+    img, #pic1{
+        width:200px;
+
+    }
+}
