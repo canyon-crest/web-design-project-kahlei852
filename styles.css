@@ -84,7 +84,7 @@ a:active{
     font-weight: bold;
 }
 #sidebar{
-    background-color: black;
+    background-color: rgb(234, 228, 228);
     width: 200px;
     line-height: 2.5em;
     border:2px solid white;
