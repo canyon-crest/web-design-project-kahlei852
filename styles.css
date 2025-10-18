@@ -1,176 +1,189 @@
-/* -------- Base Styles -------- */
+/* === ORIGINAL BASE === */
 body {
-    background-color: #bcd9b3; /* softer darkseagreen variant */
-    color: #000;
+    background-color: darkseagreen;
+    color: rgb(0, 0, 0);
     font-family: Arial, Helvetica, sans-serif;
+    /* Enhancement */
     margin: 0;
     padding: 0;
+    line-height: 1.6;
+    background: linear-gradient(to bottom right, darkseagreen, rgb(187, 238, 187));
 }
 
-/* -------- Main Container -------- */
+/* MAIN CONTAINER */
 #container {
-    width: 80%;
-    max-width: 900px;
-    margin: 40px auto;
-    background-color: #8bc34a;
+    width: 800px;
+    margin: 20px auto;
+    background-color: rgb(134, 202, 24);
     padding: 40px;
-    border-left: 5px double #fff;
-    border-right: 5px double #fff;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    border-radius: 10px;
+    border-left: 5px double white;
+    border-right: 5px double white;
+    /* Enhancement */
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
 }
 
-/* -------- Headings -------- */
+/* HEADER STYLING */
 h1 {
-    background-color: #f8fdfd;
+    background-color: azure;
     border: 3px solid gray;
     border-radius: 15px;
     padding: 20px;
     text-align: center;
     margin: 20px auto;
     font-family: 'Times New Roman', Times, serif;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    /* Enhancement */
+    color: darkgreen;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 h2 {
-    font-size: 1.4em;
+    font-size: 1.3em;
     text-align: center;
     font-style: italic;
-    color: #114d18;
+    /* Enhancement */
+    color: #2a4a2a;
+    margin-bottom: 15px;
 }
 
 h3 {
-    padding: 10px 15px;
-    border-left: 8px solid #ccc;
+    padding: 5px;
+    border-left: 20px groove #ccc;
+    padding-left: 15px;
+    border-radius: 30px;
     border-bottom: 2px solid #ccc;
-    border-radius: 8px;
-    width: fit-content;
-    background-color: #e8f5e9;
-    margin: 20px 0 10px 0;
-    color: #0f4c1a;
+    width: 250px;
+    /* Enhancement */
+    background-color: rgba(255, 255, 255, 0.5);
+    font-weight: bold;
 }
 
-/* -------- Paragraphs -------- */
+/* PARAGRAPH STYLING */
 p {
-    line-height: 1.8em;
-    background-color: #049162;
+    line-height: 2.5em;
+    background-color: rgb(7, 144, 98);
     padding: 20px;
     border: 2px dotted black;
-    color: #fff;
+    /* Enhancement */
     border-radius: 10px;
-    margin-bottom: 20px;
+    color: white;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.3);
 }
 
-/* -------- Images -------- */
+/* IMAGE STYLING */
 img {
-    width: 280px;
-    border: 3px solid #fff;
+    width: 300px;
+    border: 3px solid white;
     border-radius: 15px;
     float: left;
-    margin: 0 20px 20px 0;
-    transition: transform 0.3s ease;
+    margin-right: 20px;
+    /* Enhancement */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
 }
 img:hover {
     transform: scale(1.05);
 }
 
-/* -------- Links (Pseudo Selectors) -------- */
+/* LINKS */
 a:link {
-    color: #055;
+    color: rgb(5, 105, 55);
     text-decoration: none;
     font-weight: bold;
 }
 a:visited {
-    color: #2dc864;
+    color: rgb(45, 200, 100);
 }
 a:hover {
-    color: #fff;
-    background-color: #0a3d1a;
+    color: antiquewhite;
     text-decoration: underline;
-    border-radius: 3px;
-    padding: 2px 5px;
+    /* Enhancement */
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
 }
 a:active {
-    color: #94e9cd;
+    color: rgb(148, 233, 205);
 }
 
-/* -------- Sidebar -------- */
-#sidebar {
-    background-color: #f2f2f2;
-    width: 220px;
-    line-height: 2em;
-    border: 2px solid #fff;
-    float: right;
-    margin: 20px;
-    margin-top: 70px;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-#sidebar h3 {
-    border: none;
-    text-align: center;
-    padding: 8px;
-    margin: 0;
-    margin-top: 15px;
-    background-color: #145a32;
-    color: #fff;
-    border-radius: 6px;
-}
-#sidebar ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 10px;
-}
-#sidebar li {
-    font-style: italic;
-    padding: 6px 0;
-}
-
-/* -------- Class Rule (for rubric & highlight) -------- */
-.highlight {
-    background-color: #e13326;
-    color: black;
-    padding: 4px 6px;
-    border-radius: 3px;
-    font-weight: bold;
-}
-
-/* -------- Image IDs -------- */
+/* IMAGE IDS */
 #pic1 {
     border: none;
     width: 250px;
 }
-
 #pic2 {
     float: right;
     margin-left: 10px;
-    margin-right: 0;
+    margin-right: 0px;
+}
+#p2 { }
+
+/* HIGHLIGHT CLASS */
+.highlight {
+    background-color: rgb(225, 51, 38);
+    color: black;
+    padding: 2px;
+    border-radius: 3px;
+    font-weight: bold;
+    /* Enhancement */
+    box-shadow: 0 0 6px rgba(225, 51, 38, 0.5);
 }
 
-/* -------- Responsive Media Queries -------- */
+/* SIDEBAR */
+#sidebar {
+    background-color: rgb(234, 228, 228);
+    width: 200px;
+    line-height: 2.5em;
+    border: 2px solid white;
+    float: right;
+    margin: 20px;
+    margin-top: 70px;
+    /* Enhancement */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#sidebar h3 {
+    border: none;
+    text-align: center;
+    padding: 5px;
+    margin: 0 auto;
+    margin-top: 15px;
+    background-color: darkgreen;
+    border: 1px dotted white;
+    /* Enhancement */
+    color: white;
+    border-radius: 8px;
+}
+
+/* LIST ITEMS */
+li {
+    font-style: italic;
+    /* Enhancement */
+    list-style-type: circle;
+}
+
+/* RESPONSIVE DESIGN */
 @media (max-width: 1200px) {
     #container {
-        background-color: #4caf50;
-        width: 90%;
+        background-color: rgb(4, 145, 4);
+        width: 600px;
     }
 }
 
 @media (max-width: 992px) {
     #container {
-        background-color: #76c893;
+        background-color: rgb(49, 184, 49);
         width: 100%;
     }
-    body, p, #container, h3 {
+    body, p, #container, #p2, h3 {
         margin: 0;
         border: none;
         padding: 0;
-        background-color: #fafafa;
-        color: #222;
+        background-color: antiquewhite;
     }
     p {
         padding: 20px;
-        background-color: #c5e1a5;
-        color: #000;
     }
 }
 
@@ -181,16 +194,10 @@ a:active {
     h1 {
         border: none;
         background: none;
-        color: #222;
+        color: #ccc;
         width: 90%;
     }
     img, #pic1 {
         width: 200px;
-        float: none;
-        display: block;
-        margin: 0 auto 20px auto;
-    }
-    #container {
-        padding: 20px;
     }
 }
