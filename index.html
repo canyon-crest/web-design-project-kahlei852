@@ -1,121 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>ADD TITLE HERE</title>
-  <link rel="stylesheet" href="styles.css">
-  
-  <!-- Your internal CSS kept exactly as you wrote, properly moved inside <style> -->
-  <style>
-    .container {
-      padding: 20px;
-      margin: auto;
-      border: 1px solid #ccc;
-      font-family: Arial, sans-serif;
-      background-color: #f8fff8; /* added soft tone */
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      max-width: 700px;
-    }
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kahlei McGonegle - Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      /* ====== ORIGINAL STYLES (KEPT) ====== */
+      .container {
+        padding: 20px;
+        margin: auto;
+        border: 1px solid #ccc;
+        font-family: Arial, sans-serif;
+      }
 
-    .title {
-      font-size: 2rem;
-      line-height: 1.2;
-      text-align: center;
-      color: darkgreen;
-      text-shadow: 0 1px 2px rgba(0,0,0,0.1);
-    }
+      .title {
+        font-size: 2rem;
+        line-height: 1.2;
+        text-align: center;
+      }
 
-    .text {
-      font-size: 1rem;
-      line-height: 1.5;
-      color: #333;
-      text-align: center;
-      margin-bottom: 20px;
-    }
+      .text {
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #333;
+      }
 
-    .link {
-      display: block;
-      text-align: center;
-      font-weight: bold;
-      color: #1a5c37;
-      text-decoration: none;
-      background-color: #d8f3dc;
-      border-radius: 8px;
-      width: 150px;
-      margin: 0 auto;
-      padding: 10px;
-      transition: background-color 0.3s;
-    }
+      .link:hover {
+        color: blue;
+        text-decoration: underline;
+      }
 
-    .link:hover {
-      color: blue;
-      text-decoration: underline;
-      background-color: #b7e4c7;
-    }
-  </style>
-</head>
+      /* ====== PROFESSIONAL ENHANCEMENTS ====== */
+      body {
+        margin: 0;
+        background-color: #f9fafc;
+        color: #333;
+        font-family: "Poppins", Arial, sans-serif;
+      }
 
-<body>
+      #container {
+        max-width: 900px;
+        margin: 40px auto;
+        background: white;
+        padding: 40px;
+        border-radius: 16px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      }
 
-  <!-- YOUR FIRST CONTAINER (kept exactly as you wrote it) -->
-  <div class="container">
-    <h1 class="title">Welcome to My Website</h1>
-    <p class="text">This is a paragraph with a class.</p>
-    <a href="#" class="link">Click me</a>
-  </div>
+      h1 {
+        text-align: center;
+        color: #222;
+        font-size: 2.5rem;
+      }
 
-  <!-- YOUR SECOND CONTAINER (kept and cleaned up) -->
-  <div id="container">
-    <h1>Kahlei McGonegle</h1>
+      h2 {
+        text-align: center;
+        color: #555;
+        font-weight: normal;
+        margin-bottom: 30px;
+      }
 
-    <h2>Student at Canyon Crest Academy</h2>
+      h3 {
+        margin-top: 40px;
+        color: #0056b3;
+      }
 
-    <div id="sidebar">
-      <h3>Information</h3>
-      <ul>
-        <li>Fact 1</li>
-        <li>Fact 2</li>
-        <li>Fact 3</li>
-        <li>Fact 4</li>
-        <li>Fact 5</li>
-        <li>Fact 6</li>
-      </ul>
+      p {
+        line-height: 1.7;
+        font-size: 1.1rem;
+        color: #444;
+      }
+
+      a {
+        color: #007bff;
+        text-decoration: none;
+        transition: 0.3s;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      #sidebar {
+        background: #f0f4f8;
+        padding: 20px;
+        border-radius: 12px;
+        margin: 30px 0;
+      }
+
+      #sidebar h3 {
+        margin-top: 0;
+      }
+
+      #sidebar ul {
+        list-style-type: square;
+        padding-left: 20px;
+      }
+
+      #sidebar li {
+        margin: 5px 0;
+        font-size: 1rem;
+      }
+
+      img {
+        width: 100%;
+        max-width: 450px;
+        border-radius: 10px;
+        display: block;
+        margin: 20px auto;
+      }
+
+      .highlight {
+        background: #fff8b3;
+        padding: 2px 6px;
+        border-radius: 4px;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 50px;
+        color: #777;
+        font-size: 0.9rem;
+      }
+
+      /* ====== RESPONSIVE DESIGN ====== */
+      @media (max-width: 768px) {
+        #container {
+          padding: 20px;
+        }
+        h1 {
+          font-size: 2rem;
+        }
+        h2 {
+          font-size: 1.3rem;
+        }
+        img {
+          max-width: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="container">
+      <h1>Kahlei McGonegle</h1>
+      <h2>Student at Canyon Crest Academy</h2>
+
+      <div id="sidebar">
+        <h3>Information</h3>
+        <ul>
+          <li>Fact 1</li>
+          <li>Fact 2</li>
+          <li>Fact 3</li>
+          <li>Fact 4</li>
+          <li>Fact 5</li>
+          <li>Fact 6</li>
+        </ul>
+      </div>
+
+      <h3>My Dog</h3>
+      <img src="images/Boxer Dog.jpeg" id="pic1" alt="Boxer Dog">
+      <p>
+        One of my favorite things in life is my
+        <a href="https://www.akc.org/dog-breeds/boxer/" target="_blank">dog</a>.
+        He never fails to brighten my day, regardless of how I'm feeling.
+        I can unwind and temporarily forget about my worries when I sit with him or take him for walks.
+        <span class="highlight">He seems to understand me without using words</span>, and I adore how devoted and content he is.
+        His presence serves as a reminder to me to be patient, kind, and present while also appreciating the small things in life.
+      </p>
+
+      <h3>The Beach</h3>
+      <img src="images/beach.jpeg" id="pic2" alt="Beach">
+      <p>
+        I've always found that going to the beach helps me recharge.
+        I feel at ease and liberated when I hear the waves and feel the sand beneath my feet.
+        I enjoy spending the day there with friends, swimming in the
+        <a href="https://www.sandiego.gov/lifeguards/beaches" target="_blank">ocean</a> and watching the sunset.
+        When I'm at the beach, I'm reminded of how vast the world is and how trivial my problems can seem in the presence of nature.
+        I can laugh easily, think clearly, and feel fully myself there.
+      </p>
+
+      <h3>My Family</h3>
+      <img src="images/download (2).png" alt="Family">
+      <p>
+        To me, my <a href="https://www.britannica.com/topic/family-kinship" target="_blank">family</a> is everything.
+        They are the ones who have cheered me on at every turn and helped me overcome every obstacle.
+        I always feel rooted with them, whether we're dining together, traveling, or just conversing.
+        They have instilled in me the value of diligence, decency, and empathy.
+        My greatest source of inspiration and the reason I strive to be the best version of myself every day is my family.
+      </p>
+
+      <footer>
+        © 2025 Kahlei McGonegle. All rights reserved.
+      </footer>
     </div>
-
-    <h3>My Dog</h3>
-    <img src="images/Boxer Dog.jpeg" id="pic1" alt="Boxer dog image">
-
-    <p>
-      One of my favorite things in life is my 
-      <a href="https://www.akc.org/dog-breeds/boxer/" target="_blank">dog</a>. 
-      He never fails to brighten my day, regardless of how I'm feeling. 
-      I can unwind and temporarily forget about my worries when I sit with him or take him for walks. 
-      <span class="highlight">He seems to understand me without using words</span>, and I adore how devoted and content he is. 
-      His presence serves as a reminder to be patient, kind, and present while also appreciating the small things in life.
-    </p>
-
-    <h3>The Beach</h3>
-    <p>
-      <img src="images/beach.jpeg" id="pic2" alt="Beach view">
-      I've always found that going to the beach helps me recharge. 
-      I feel at ease and liberated when I hear the waves and feel the sand beneath my feet. 
-      I enjoy spending the day there with friends, swimming in the 
-      <a href="https://www.sandiego.gov/lifeguards/beaches" target="_blank">ocean</a> and watching the sunset. 
-      When I'm at the beach, I'm reminded of how vast the world is and how trivial my problems can seem in the presence of nature. 
-      I can laugh easily, think clearly, and feel fully myself there.
-    </p>
-
-    <h3>My Family</h3>
-    <p>
-      <img src="images/download (2).png" alt="Family photo">
-      To me, my <a href="https://www.britannica.com/topic/family-kinship" target="_blank">family</a> is everything. 
-      They are the ones who have cheered me on at every turn and helped me overcome every obstacle. 
-      I always feel rooted with them, whether we're dining together, traveling, or just conversing. 
-      They have instilled in me the value of diligence, decency, and empathy. 
-      My greatest source of inspiration and the reason I strive to be the best version of myself every day is my family.
-    </p>
-  </div>
-
-</body>
+  </body>
 </html>
