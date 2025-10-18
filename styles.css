@@ -1,145 +1,196 @@
-body{
-    background-color: darkseagreen;
-    color: rgb(0, 0, 0);
-    font-family: Arial, Helvetica, sans-serif
+/* -------- Base Styles -------- */
+body {
+    background-color: #bcd9b3; /* softer darkseagreen variant */
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
-#container{
-    width: 800px;
-    margin: 20px auto; 
-    background-color: rgb(134, 202, 24);
+
+/* -------- Main Container -------- */
+#container {
+    width: 80%;
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #8bc34a;
     padding: 40px;
-    border-left:5px double white;
-    border-right:5px double white;
+    border-left: 5px double #fff;
+    border-right: 5px double #fff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    border-radius: 10px;
 }
-h1{
-    background-color: azure;
-    border: 3px gray;
+
+/* -------- Headings -------- */
+h1 {
+    background-color: #f8fdfd;
+    border: 3px solid gray;
     border-radius: 15px;
     padding: 20px;
     text-align: center;
     margin: 20px auto;
     font-family: 'Times New Roman', Times, serif;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
-h2{
-    font-size: 1.3em;
+
+h2 {
+    font-size: 1.4em;
     text-align: center;
     font-style: italic;
+    color: #114d18;
 }
-h3{
-    padding: 5px;
-    border-left: 20px groove #ccc;
-    padding-left: 15px;
-    border-radius: 30px;
+
+h3 {
+    padding: 10px 15px;
+    border-left: 8px solid #ccc;
     border-bottom: 2px solid #ccc;
-    width: 250px;
+    border-radius: 8px;
+    width: fit-content;
+    background-color: #e8f5e9;
+    margin: 20px 0 10px 0;
+    color: #0f4c1a;
 }
-p{
-    line-height: 2.5em;
-    background-color: rgb(7, 144, 98);
+
+/* -------- Paragraphs -------- */
+p {
+    line-height: 1.8em;
+    background-color: #049162;
     padding: 20px;
     border: 2px dotted black;
+    color: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
-img{
-    width: 300px;
-    border: 3px solid white;
+
+/* -------- Images -------- */
+img {
+    width: 280px;
+    border: 3px solid #fff;
     border-radius: 15px;
     float: left;
-    margin-right: 20px;
+    margin: 0 20px 20px 0;
+    transition: transform 0.3s ease;
 }
-/*PSEUDO SELECTORS*/ 
-a:link{
-    color:rgb(5, 105, 55);
+img:hover {
+    transform: scale(1.05);
+}
+
+/* -------- Links (Pseudo Selectors) -------- */
+a:link {
+    color: #055;
     text-decoration: none;
     font-weight: bold;
 }
-a:visited{
-    color: rgb(45, 200, 100);
+a:visited {
+    color: #2dc864;
 }
-a:hover{
-    color: antiquewhite;
+a:hover {
+    color: #fff;
+    background-color: #0a3d1a;
     text-decoration: underline;
+    border-radius: 3px;
+    padding: 2px 5px;
 }
-a:active{
-    color:rgb(148, 233, 205);
+a:active {
+    color: #94e9cd;
 }
-/*ID RULES*/
-#pic1{
-    border:none;
-    width: 250px;
-}
-#pic2{
-    float: right;
-    margin-left: 10px;
-    margin-right: 0px;
-}
-#p2{
 
+/* -------- Sidebar -------- */
+#sidebar {
+    background-color: #f2f2f2;
+    width: 220px;
+    line-height: 2em;
+    border: 2px solid #fff;
+    float: right;
+    margin: 20px;
+    margin-top: 70px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
-/* CLASS RULE */ 
-.highlight{
-    background-color:rgb(225, 51, 38);
-    color:black;
-    padding: 2px;
+#sidebar h3 {
+    border: none;
+    text-align: center;
+    padding: 8px;
+    margin: 0;
+    margin-top: 15px;
+    background-color: #145a32;
+    color: #fff;
+    border-radius: 6px;
+}
+#sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px;
+}
+#sidebar li {
+    font-style: italic;
+    padding: 6px 0;
+}
+
+/* -------- Class Rule (for rubric & highlight) -------- */
+.highlight {
+    background-color: #e13326;
+    color: black;
+    padding: 4px 6px;
     border-radius: 3px;
     font-weight: bold;
 }
-#sidebar{
-    background-color: rgb(234, 228, 228);
-    width: 200px;
-    line-height: 2.5em;
-    border:2px solid white;
-    flaot: right;
-    margin: 20px;
-    margin-top: 70px;
-}
-#sidebar h3{
+
+/* -------- Image IDs -------- */
+#pic1 {
     border: none;
-    text-align: center;
-    padding: 5px;
-    margin: 0 auto;
-    margin-top: 15px;
-    background-color:darkgreen;
-    border: 1px dotted white;
-}
-li{
-    font-style: italic;
+    width: 250px;
 }
 
+#pic2 {
+    float: right;
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+/* -------- Responsive Media Queries -------- */
 @media (max-width: 1200px) {
-    #container{
-        background-color: rgb(4, 145, 4);
-        width:600px;
+    #container {
+        background-color: #4caf50;
+        width: 90%;
     }
 }
 
-@media(max max-width:992px){
-    #container{
-        background-color: rgb(49, 184, 49);
+@media (max-width: 992px) {
+    #container {
+        background-color: #76c893;
         width: 100%;
     }
-    body, p, #container, #p2, h3{
-        margin:0;
-        border:none;
+    body, p, #container, h3 {
+        margin: 0;
+        border: none;
         padding: 0;
-        background-color: antiquewhite;
+        background-color: #fafafa;
+        color: #222;
     }
-    p{
-        padding:20px;
+    p {
+        padding: 20px;
+        background-color: #c5e1a5;
+        color: #000;
     }
 }
-@media(max-width:768px){
-    #sidebar{
-        display:none;
-    }
-    h1{
-        border:none;
-        background:none;
-        color:#ccc
-        width:90%;
-    }
 
-    img, #pic1{
-        width:200px;
-
+@media (max-width: 768px) {
+    #sidebar {
+        display: none;
+    }
+    h1 {
+        border: none;
+        background: none;
+        color: #222;
+        width: 90%;
+    }
+    img, #pic1 {
+        width: 200px;
+        float: none;
+        display: block;
+        margin: 0 auto 20px auto;
+    }
+    #container {
+        padding: 20px;
     }
 }
