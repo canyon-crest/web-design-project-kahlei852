@@ -82,10 +82,11 @@ img {
     margin-right: 20px;
     /* Enhancement */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 img:hover {
     transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
 /* LINKS */
@@ -163,6 +164,13 @@ li {
     list-style-type: circle;
 }
 
+/* CLEAR FLOATS */
+#container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 /* RESPONSIVE DESIGN */
 @media (max-width: 1200px) {
     #container {
@@ -181,9 +189,15 @@ li {
         border: none;
         padding: 0;
         background-color: antiquewhite;
+        color: #222;
     }
     p {
         padding: 20px;
+    }
+    #sidebar {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
     }
 }
 
@@ -194,10 +208,13 @@ li {
     h1 {
         border: none;
         background: none;
-        color: #ccc;
+        color: #333;
         width: 90%;
     }
-    img, #pic1 {
+    img, #pic1, #pic2 {
         width: 200px;
+        float: none;
+        display: block;
+        margin: 0 auto 20px;
     }
 }
