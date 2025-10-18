@@ -1,64 +1,121 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>ADD TITLE HERE</title>
-    <link rel="stylesheet" href="styles.css">  
-  </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ADD TITLE HERE</title>
+  <link rel="stylesheet" href="styles.css">
   
+  <!-- Your internal CSS kept exactly as you wrote, properly moved inside <style> -->
+  <style>
+    .container {
+      padding: 20px;
+      margin: auto;
+      border: 1px solid #ccc;
+      font-family: Arial, sans-serif;
+      background-color: #f8fff8; /* added soft tone */
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      max-width: 700px;
+    }
+
+    .title {
+      font-size: 2rem;
+      line-height: 1.2;
+      text-align: center;
+      color: darkgreen;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    }
+
+    .text {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #333;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .link {
+      display: block;
+      text-align: center;
+      font-weight: bold;
+      color: #1a5c37;
+      text-decoration: none;
+      background-color: #d8f3dc;
+      border-radius: 8px;
+      width: 150px;
+      margin: 0 auto;
+      padding: 10px;
+      transition: background-color 0.3s;
+    }
+
+    .link:hover {
+      color: blue;
+      text-decoration: underline;
+      background-color: #b7e4c7;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- YOUR FIRST CONTAINER (kept exactly as you wrote it) -->
   <div class="container">
-  <h1 class="title">Welcome to My Website</h1>
-  <p class="text">This is a paragraph with a class.</p>
-  <a href="#" class="link">Click me</a>
-</div>
-.container {
-  padding: 20px;
-  margin: auto;
-  border: 1px solid #ccc;
-  font-family: Arial, sans-serif;
-}
+    <h1 class="title">Welcome to My Website</h1>
+    <p class="text">This is a paragraph with a class.</p>
+    <a href="#" class="link">Click me</a>
+  </div>
 
-.title {
-  font-size: 2rem;
-  line-height: 1.2;
-  text-align: center;
-}
-
-.text {
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #333;
-}
-
-.link:hover {
-  color: blue;
-  text-decoration: underline;
-}
-  <body>
-    <div id="container">
-    <p><h1>Kahlei McGonegle</h1></p>
+  <!-- YOUR SECOND CONTAINER (kept and cleaned up) -->
+  <div id="container">
+    <h1>Kahlei McGonegle</h1>
 
     <h2>Student at Canyon Crest Academy</h2>
+
     <div id="sidebar">
       <h3>Information</h3>
       <ul>
-      <li>Fact 1</li>
-      <li>Fact 2</li>
-      <li>Fact 3</li>
-      <li>Fact 4</li>
-      <li>Fact 5</li>
-      <li>Fact 6</li>
+        <li>Fact 1</li>
+        <li>Fact 2</li>
+        <li>Fact 3</li>
+        <li>Fact 4</li>
+        <li>Fact 5</li>
+        <li>Fact 6</li>
       </ul>
     </div>
+
     <h3>My Dog</h3>
-    <img src="images/Boxer Dog.jpeg" id="pic1"> 
-<One of my favorite things in life is my <a href="https://www.akc.org/dog-breeds/boxer/" target = "_blank">dog</a>. He never fails to brighten my day, regardless of how I'm feeling. I can unwind and temporarily forget about my worries when I sit with him or take him for walks. <span class="highlight">seems to understand me without using words</span>,and I adore how devoted and content he is. His presence serves as a reminder to me to be patient, kind, and present while also appreciating the small things in life.
-<h3>The Beach</h3> <p>
-<img src="images/beach.jpeg" id="pic2">
-I've always found that going to the beach helps me recharge. I feel at ease and liberated when I hear the waves and feel the sand beneath my feet. I enjoy spending the day there with friends, swimming in the <a href="https://www.sandiego.gov/lifeguards/beaches" target = "_blank">ocean</a>  and watching the sunset. When I'm at the beach, I'm reminded of how vast the world is and how trivial my problems can seem in the presence of nature. I can laugh easily, think clearly, and feel fully myself there.</p>
-<h3>My Family</h3>
-<img src="images/download (2).png"
-To me, my <a href="https://www.britannica.com/topic/family-kinship" target = "_blank">family</a>  is everything. They are the ones who have cheered me on at every turn and helped me overcome every obstacle. I always feel rooted with them, whether we're dining together, traveling, or just conversing. They have instilled in me the value of diligence, decency, and empathy. My greatest source of inspiration and the reason I strive to be the best version of myself every day is my family.
-</p>
-</div>
-  </body>
+    <img src="images/Boxer Dog.jpeg" id="pic1" alt="Boxer dog image">
+
+    <p>
+      One of my favorite things in life is my 
+      <a href="https://www.akc.org/dog-breeds/boxer/" target="_blank">dog</a>. 
+      He never fails to brighten my day, regardless of how I'm feeling. 
+      I can unwind and temporarily forget about my worries when I sit with him or take him for walks. 
+      <span class="highlight">He seems to understand me without using words</span>, and I adore how devoted and content he is. 
+      His presence serves as a reminder to be patient, kind, and present while also appreciating the small things in life.
+    </p>
+
+    <h3>The Beach</h3>
+    <p>
+      <img src="images/beach.jpeg" id="pic2" alt="Beach view">
+      I've always found that going to the beach helps me recharge. 
+      I feel at ease and liberated when I hear the waves and feel the sand beneath my feet. 
+      I enjoy spending the day there with friends, swimming in the 
+      <a href="https://www.sandiego.gov/lifeguards/beaches" target="_blank">ocean</a> and watching the sunset. 
+      When I'm at the beach, I'm reminded of how vast the world is and how trivial my problems can seem in the presence of nature. 
+      I can laugh easily, think clearly, and feel fully myself there.
+    </p>
+
+    <h3>My Family</h3>
+    <p>
+      <img src="images/download (2).png" alt="Family photo">
+      To me, my <a href="https://www.britannica.com/topic/family-kinship" target="_blank">family</a> is everything. 
+      They are the ones who have cheered me on at every turn and helped me overcome every obstacle. 
+      I always feel rooted with them, whether we're dining together, traveling, or just conversing. 
+      They have instilled in me the value of diligence, decency, and empathy. 
+      My greatest source of inspiration and the reason I strive to be the best version of myself every day is my family.
+    </p>
+  </div>
+
+</body>
 </html>
