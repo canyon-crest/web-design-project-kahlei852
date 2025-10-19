@@ -167,3 +167,78 @@ section h3 {
   box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
+
+/* --------------------------- */
+/* 🌙 DARK MODE TOGGLE */
+/* --------------------------- */
+
+#darkToggle {
+  display: none;
+}
+
+.toggle-label {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  background: #0077cc;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.toggle-label:hover {
+  background: #005fa3;
+  transform: scale(1.05);
+}
+
+/* Default light mode colors */
+body {
+  background: linear-gradient(-45deg, #0077cc, #00c6ff, #6dd5ed, #f7797d);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+  color: #222;
+  transition: background 0.5s, color 0.5s;
+}
+
+/* Dark mode when checkbox is checked */
+#darkToggle:checked ~ * {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+#darkToggle:checked ~ .navbar,
+#darkToggle:checked ~ .footer {
+  background-color: #1f1f1f;
+}
+
+#darkToggle:checked ~ .toggle-label {
+  background: #e0e0e0;
+  color: #121212;
+}
+
+/* Gradient animation */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Make your centered box pop */
+.content-box {
+  background: rgba(255, 255, 255, 0.8);
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  backdrop-filter: blur(10px);
+  transition: background 0.5s;
+}
+
+#darkToggle:checked ~ .content-box {
+  background: rgba(25, 25, 25, 0.85);
+}
