@@ -242,7 +242,7 @@ body {
 #darkToggle:checked ~ .content-box {
   background: rgba(25, 25, 25, 0.85);
 }
-* Make h3 titles brighter in dark mode */
+
 #darkToggle:checked ~ .content-box h3,
 #darkToggle:checked ~ section h3 {
   color: #80d8ff;
