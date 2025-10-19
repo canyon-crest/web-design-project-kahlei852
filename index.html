@@ -1,58 +1,81 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>ADD TITLE HERE</title>
-    <link rel="stylesheet" href="styles.css">  
-  </head>
-  
-  <div class="container">
-  <h1 class="title">Welcome to My Website</h1>
-  <p class="text">This is a paragraph with a class.</p>
-  <a href="#" class="link">Click me</a>
-</div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kahlei McGonegle | Personal Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
 
-.title {
-  font-size: 2rem;
-  line-height: 1.2;
-  text-align: center;
-}
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">Kahlei McGonegle</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#dog">My Dog</a></li>
+      <li><a href="#beach">The Beach</a></li>
+      <li><a href="#family">My Family</a></li>
+    </ul>
+  </nav>
 
-.text {
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #333;
-}
+  <!-- Header -->
+  <header class="hero">
+    <h1>Welcome to My Website</h1>
+    <p>Discover a little more about me and what inspires me every day.</p>
+  </header>
 
-.link:hover {
-  color: blue;
-  text-decoration: underline;
-}
-  <body>
-    <div id="container">
-    <p><h1>Kahlei McGonegle</h1></p>
+  <!-- Main Content -->
+  <main class="container">
+    <section id="about">
+      <h2>Student at Canyon Crest Academy</h2>
+      <div class="sidebar">
+        <h3>Information</h3>
+        <ul>
+          <li>Fact 1</li>
+          <li>Fact 2</li>
+          <li>Fact 3</li>
+          <li>Fact 4</li>
+          <li>Fact 5</li>
+          <li>Fact 6</li>
+        </ul>
+      </div>
+    </section>
 
-    <h2>Student at Canyon Crest Academy</h2>
-    <div id="sidebar">
-      <h3>Information</h3>
-      <ul>
-      <li>Fact 1</li>
-      <li>Fact 2</li>
-      <li>Fact 3</li>
-      <li>Fact 4</li>
-      <li>Fact 5</li>
-      <li>Fact 6</li>
-      </ul>
-    </div>
-    <h3>My Dog</h3>
-    <img src="images/Boxer Dog.jpeg" id="pic1"> 
-<One of my favorite things in life is my <a href="https://www.akc.org/dog-breeds/boxer/" target = "_blank">dog</a>. He never fails to brighten my day, regardless of how I'm feeling. I can unwind and temporarily forget about my worries when I sit with him or take him for walks. <span class="highlight">seems to understand me without using words</span>,and I adore how devoted and content he is. His presence serves as a reminder to me to be patient, kind, and present while also appreciating the small things in life.
-<h3>The Beach</h3> <p>
-<img src="images/beach.jpeg" id="pic2">
-I've always found that going to the beach helps me recharge. I feel at ease and liberated when I hear the waves and feel the sand beneath my feet. I enjoy spending the day there with friends, swimming in the <a href="https://www.sandiego.gov/lifeguards/beaches" target = "_blank">ocean</a>  and watching the sunset. When I'm at the beach, I'm reminded of how vast the world is and how trivial my problems can seem in the presence of nature. I can laugh easily, think clearly, and feel fully myself there.</p>
-<h3>My Family</h3>
-<img src="images/download (2).png"
-To me, my <a href="https://www.britannica.com/topic/family-kinship" target = "_blank">family</a>  is everything. They are the ones who have cheered me on at every turn and helped me overcome every obstacle. I always feel rooted with them, whether we're dining together, traveling, or just conversing. They have instilled in me the value of diligence, decency, and empathy. My greatest source of inspiration and the reason I strive to be the best version of myself every day is my family.
-</p>
-</div>
-  </body>
+    <section id="dog">
+      <h3>My Dog</h3>
+      <img src="images/Boxer Dog.jpeg" alt="Boxer Dog" class="image">
+      <p>One of my favorite things in life is my
+        <a href="https://www.akc.org/dog-breeds/boxer/" target="_blank">dog</a>.
+        He never fails to brighten my day, regardless of how I'm feeling. I can unwind and temporarily forget about my worries when I sit with him or take him for walks.
+        <span class="highlight">He seems to understand me without using words</span>, and I adore how devoted and content he is.
+        His presence reminds me to be patient, kind, and present while appreciating the small things in life.
+      </p>
+    </section>
+
+    <section id="beach">
+      <h3>The Beach</h3>
+      <img src="images/beach.jpeg" alt="Beach" class="image">
+      <p>I've always found that going to the beach helps me recharge. I feel at ease and liberated when I hear the waves and feel the sand beneath my feet. I enjoy spending the day there with friends, swimming in the
+        <a href="https://www.sandiego.gov/lifeguards/beaches" target="_blank">ocean</a> and watching the sunset.
+        When I'm at the beach, I'm reminded of how vast the world is and how small my problems can seem in the presence of nature.
+      </p>
+    </section>
+
+    <section id="family">
+      <h3>My Family</h3>
+      <img src="images/download (2).png" alt="Family" class="image">
+      <p>To me, my <a href="https://www.britannica.com/topic/family-kinship" target="_blank">family</a> is everything.
+        They cheer me on at every turn and help me overcome every obstacle. Whether we’re dining together, traveling, or just talking, I always feel grounded with them.
+        They’ve taught me the value of diligence, decency, and empathy. My family is my greatest source of inspiration and the reason I strive to be my best self.
+      </p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Kahlei McGonegle | Built with ❤️ and creativity</p>
+  </footer>
+</body>
 </html>
