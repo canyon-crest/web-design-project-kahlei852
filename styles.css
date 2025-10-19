@@ -98,6 +98,7 @@ section h3 {
   display: block;
   margin: 1rem auto;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  float:left;
   transition: transform 0.3s;
 }
 
@@ -135,5 +136,23 @@ section h3 {
   }
   .hero h1 {
     font-size: 2rem;
+  }
+}
+@media (max-width: 1024px) {
+  body {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .image {
+    float: none;
+    width: 100%;
   }
 }
