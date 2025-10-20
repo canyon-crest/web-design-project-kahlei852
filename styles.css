@@ -40,6 +40,12 @@ body {
 
 .nav-links a:hover {
   color: #ffe082;
+} 
+
+a:hover {
+  color: #00bcd4; /* Example color, change as desired */
+  text-decoration: underline; /* Optional: Add underline for better visibility */
+  transition: color 0.3s ease; /* Optional: Smooth transition for the color change */
 }
 
 /* Hero Section */
