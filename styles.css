@@ -263,7 +263,7 @@ section h3 {
 .toggle-label {
   position: fixed;
   bottom: 15px;
-  left: 20px;
+  left: 10px;
   background: #0077cc;
   color: white;
   padding: 8px 14px;
@@ -325,4 +325,30 @@ body {
 }
 .extra-space {
     line-height: 2.5; /* Increase the number for more spacing if needed */
+}
+
+
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #1a237e;
+  color: white;
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 1000;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.back-to-top:hover {
+  background: #3a7bd5;
+  transform: translateY(-2px);
+}
+
+html {
+  scroll-behavior: smooth;
 }
