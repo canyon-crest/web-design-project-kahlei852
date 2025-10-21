@@ -58,7 +58,7 @@ a:hover {
 .hero {
   text-align: center;
   padding: 4rem 1rem;
-  background: linear-gradient(180deg, #e3f2fd, #fdfdfd);
+  background: linear-gradient(180deg, #e3f2fd, #ffffff);
 }
 
 .hero h1 {
