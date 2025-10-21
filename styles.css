@@ -323,3 +323,6 @@ body {
     background-position: 0% 50%;
   }
 }
+.extra-space {
+    line-height: 2.5; /* Increase the number for more spacing if needed */
+}
