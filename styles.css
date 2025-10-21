@@ -1,13 +1,17 @@
-/* Font and layout setup */
+/* ========================== */
+/*  FONT + BASE LAYOUT SETUP */
+/* ========================== */
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #fdfdfd;
-  color: #f3f1f1;
+  color: #222;
   margin: 0;
   line-height: 1.6;
 }
 
-/* Navigation Bar */
+/* ========================== */
+/*  NAVIGATION BAR */
+/* ========================== */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -40,15 +44,17 @@ body {
 
 .nav-links a:hover {
   color: #ffe082;
-} 
-
-a:hover {
-  color: #00bcd4; /* Example color, change as desired */
-  text-decoration: underline; /* Optional: Add underline for better visibility */
-  transition: color 0.3s ease; /* Optional: Smooth transition for the color change */
 }
 
-/* Hero Section */
+a:hover {
+  color: #00bcd4;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+/* ========================== */
+/*  HERO SECTION */
+/* ========================== */
 .hero {
   text-align: center;
   padding: 4rem 1rem;
@@ -66,9 +72,11 @@ a:hover {
   margin: 1rem auto;
 }
 
-/* Container and sections */
+/* ========================== */
+/*  CONTAINER AND SECTIONS */
+/* ========================== */
 .container {
-  max-width: 900px;
+  max-width: 1100px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
@@ -83,21 +91,42 @@ section h3 {
   margin-bottom: 0.5rem;
 }
 
+/* ========================== */
+/*  FLEX LAYOUT FOR SIDEBAR + CONTENT */
+/* ========================== */
+.section-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.main-content {
+  flex: 1 1 60%;
+  min-width: 300px;
+}
+
 .sidebar {
+  flex: 1 1 30%;
+  min-width: 250px;
   background-color: #f1f8ff;
   border-left: 4px solid #1a73e8;
   padding: 1rem;
   border-radius: 8px;
+  color: #02052e;
 }
 
 .sidebar ul {
   list-style: circle;
   margin: 0;
-  padding-left: 1.5rem; 
-  color: #02052e;
+  padding-left: 1.5rem;
 }
 
-/* Images */
+/* ========================== */
+/* IMAGES */
+/* ========================== */
 .image {
   width: 100%;
   max-width: 600px;
@@ -105,7 +134,6 @@ section h3 {
   display: block;
   margin: 1rem auto;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  float:none;
   transition: transform 0.3s;
 }
 
@@ -113,14 +141,55 @@ section h3 {
   transform: scale(1.03);
 }
 
-/* Highlight text */
+/* Float helpers for smaller side images */
+.float-left {
+  float: left;
+  margin-right: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  max-width: 40%;
+}
+
+.float-right {
+  float: right;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  max-width: 40%;
+}
+
+/* Stop floats + flex columns on small screens */
+@media (max-width: 768px) {
+  .section-layout {
+    flex-direction: column;
+  }
+
+  .main-content,
+  .sidebar {
+    width: 100%;
+  }
+
+  .float-left,
+  .float-right {
+    float: none;
+    display: block;
+    margin: 1rem auto;
+    max-width: 90%;
+  }
+}
+
+/* ========================== */
+/* HIGHLIGHT TEXT */
+/* ========================== */
 .highlight {
   background-color: #4ac3d6;
   padding: 0.1rem 0.3rem;
   border-radius: 4px;
 }
 
-/* Footer */
+/* ========================== */
+/*  FOOTER */
+/* ========================== */
 .footer {
   background-color: #1a237e;
   color: white;
@@ -129,45 +198,23 @@ section h3 {
   font-size: 0.9rem;
 }
 
-/* Fade-in animation */
+/* ========================== */
+/*  FADE-IN ANIMATION */
+/* ========================== */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* Floating Sidebar Layout */
-.sidebar {
-  float: right;
-  width: 30%;
-  margin-left: 2rem;
-}
-
-section p {
-  width: 65%;
-  float: left;
-}
-
-/* Stop float on small screens */
-@media (max-width: 768px) {
-  .sidebar, section p { 
-    float: none; 
-    width: 100%; 
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-
-
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .nav-links {
-    flex-direction: column;
-    gap: 0.8rem;
-  }
-  .hero h1 {
-    font-size: 2rem;
-  }
-}
+/* ========================== */
+/*  RESPONSIVE DESIGN */
+/* ========================== */
 @media (max-width: 1024px) {
   body {
     font-size: 0.95rem;
@@ -177,6 +224,11 @@ section p {
 @media (max-width: 768px) {
   .nav-links {
     flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
   }
 }
 
@@ -187,20 +239,23 @@ section p {
   }
 }
 
-.content-box{
+/* ========================== */
+/*  CONTENT BOX STYLING */
+/* ========================== */
+.content-box {
+  background: rgba(255, 255, 255, 0.8);
   max-width: 900px;
-  margin: 3rem auto;
-  background-color: #02052e;
-  padding: 2rem 3rem;
+  margin: 50px auto;
+  padding: 2rem;
   border-radius: 16px;
-  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+  transition: background 0.5s;
 }
 
-/* --------------------------- */
-/* 🌙 DARK MODE TOGGLE */
-/* --------------------------- */
-
+/* ========================== */
+/*  DARK MODE TOGGLE */
+/* ========================== */
 #darkToggle {
   display: none;
 }
@@ -224,7 +279,7 @@ section p {
   transform: scale(1.05);
 }
 
-/* Default light mode colors */
+/* Gradient animated background */
 body {
   background: linear-gradient(-45deg, #0077cc, #00c6ff, #6dd5ed, #f7797d);
   background-size: 400% 400%;
@@ -233,7 +288,6 @@ body {
   transition: background 0.5s, color 0.5s;
 }
 
-/* Dark mode when checkbox is checked */
 #darkToggle:checked ~ * {
   background-color: #121212;
   color: #e0e0e0;
@@ -249,25 +303,6 @@ body {
   color: #121212;
 }
 
-/* Gradient animation */
-@keyframes gradientShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-/* Make your centered box pop */
-.content-box {
-  background: rgba(255, 255, 255, 0.8);
-  max-width: 900px;
-  margin: 50px auto;
-  padding: 2rem;
-  border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-  backdrop-filter: blur(10px);
-  transition: background 0.5s;
-}
-
 #darkToggle:checked ~ .content-box {
   background: rgba(25, 25, 25, 0.85);
 }
@@ -275,4 +310,16 @@ body {
 #darkToggle:checked ~ .content-box h3,
 #darkToggle:checked ~ section h3 {
   color: #1378a4;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
